@@ -21,10 +21,10 @@ header {
    display:flex;
    justify-content:space-between;
    align-items: center;
-   padding: 0 20px;
-   font-weight: 500;   
+   padding: 0 18px;
+   font-weight: 400;   
    font-size: 1rem;
-   line-height: 33px;
+   line-height: 1rem;
    color: #777777;
 }
 
@@ -42,7 +42,6 @@ main {
 
 main #banner{
     width: 100%;
-    
 }
 
 main > h1 {
@@ -178,4 +177,6 @@ footer {
 
 .logo-texto {
     margin: 20px 30px 30px;
-   }
+}
+
+
