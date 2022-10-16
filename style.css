@@ -1,91 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
 
 html {
-    width:100%
-}
-
-body * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    width: 100%;
+body * {
+    display:flex;
+    flex-flow: column;
+    align-items: center;
     font-family: 'Open Sans';
     font-style: normal;
-   }
+}
 
 header {
-   width: 100%;
-   height: 122px;
+   
+   max-height: 5rem;
    display:flex;
-   justify-content:space-between;
+   flex-flow: row nowrap;
+   justify-content: space-between;
    align-items: center;
-   padding: 0 18px;
-   font-weight: 400;   
-   font-size: 1rem;
-   line-height: 1rem;
-   color: #777777;
+    
 }
 
-header nav span {
-    margin-right: 15px;
+header nav {
+    display:flex;
+    align-items: center;
 }
 
-#logo {
-    margin-right: 600px;
+header nav ul {
+    display: flex;
+    flex-flow: row;
+    padding: 0;
+    margin:0;
+    list-style: none;
 }
 
-main {
-    width: 100%;
+header nav a {
+    font-size:0.8rem;
+    text-decoration:none;
+    color: darkgray;
+    padding: 0.5rem;
+    font-weight: bold;
+
 }
 
 main #banner{
+    display: flex;
     width: 100%;
 }
 
 main > h1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     font-weight: 800;
-    font-size: 60px;
-    line-height: 82px;
-    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
     color: #000000;
 }
 
 .fotos{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
-    padding: 5%;
+    gap: 1rem;
+    margin: 1rem;
+    
 }
 
 .promocao {
     width: 100%;
-    height: 662px;
-    margin-top: 207px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
     background: #C2185B;
+    margin-bottom:40px;
 }
 
-.promocao > h1{
+.promocao > h1 {
     text-align: center;
     font-weight: 800;
     font-size: 2.5rem;
     line-height: 2.5;
     color: #FFFFFF;
-    padding-top: 68px;
+    margin-top: 25px;
 }
 .promocao > ul {
     
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     list-style:none;
     margin-right: 40px;
 }
 .produtos {
-    margin-top: 54px;
-    width: 260px;
+    margin: 0.5rem;
     height: 388px;
     background: #FFFFFF;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
@@ -127,56 +142,63 @@ main > h1 {
 }
 
 #produto-destaque  {
-    
     width: 100%;
-    height: 939px;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:  115px;
-    margin-top: 163px;
-    margin-bottom: 115px;
+    flex-flow: row wrap ;
+    justify-content: center;
+    align-items:flex-end;
+    column-gap: 50px; 
 }
 
 #produto-destaque  h2 {
     font-size: 2rem;
     line-height: 2rem;
     color: #000000;
+    margin-bottom: 60px;
 }
 
 #produto-destaque #ver-detalhes {
-    width: 403px;
-    height: 99px;
+    width: 20rem;
+    height: 5rem;
     background-color: #C2185B;
     font-weight: 600;
     font-size: 2.5rem;
-    line-height: 2.5rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 60px;
+    
+}
+
+#produto-destaque #foto-destaque{
+    margin-top: 10px;
 }
 
 footer {
     background-color:#C2185B;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.7rem;
     line-height: 1rem;
     color: #FFFFFF;
     display:flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content:space-between;
     align-items: center;
+    margin-top: 30px;
+    padding: 20px;
 }
 
 .menu-footer {
     display: flex;
-    margin-right: 30px;
+    flex-flow: row nowrap ;
 }
 
 .menu-footer  ul {
     list-style: none;
-}
+    text-align: center;
+   }
 
 .logo-texto {
-    margin: 20px 30px 30px;
+    margin: 10px;
 }
 
 
